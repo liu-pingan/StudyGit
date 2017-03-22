@@ -1,0 +1,36 @@
+1.  User type:
+	root 				---- control everything;
+	RootAssistant 		---- help the root to control the company/branch/store related permition, can NOT delete anything, but can change the user's permition/authentication, can change the company/branches/stores accessibility;
+	
+	CompanyAdmin 		---- control everything of the company related, add/delete user, add/delete branches, add/delete stores, control all the company's related users' permition/authentication, can change the owned company/branches/stores assessibility;
+	CompanyAssistant 	---- add/delete branches, add/delete stores, add/delete the branches related user, control all the branches' related users' permition/authentication;
+	
+	BranchAdmin			---- control everything of the branch related, add/delete branch user, add/delete stores, add/delete stores menu, control all the branch's related users' permition/authentication, can change the owned branches/stores assessibility;
+	BranchAssistant		---- ;
+	
+	StoreAdmin;
+	StoreAssistant;
+	StoreKitchen;
+	StoreWaitress;
+	StoreCasher;
+
+2. Database:
+	RootAssistant table;
+	Company table	---- Branch table	----	Store table	---- Menu table
+	User table
+
+3. Permition Level:
+	0: root; 
+	1: RootAssistant;	
+
+	4: CompanyAdmin; 
+	5: CompanyAssistant;
+	
+	8: BranchAdmin;
+	9: BranchAssistant;
+	
+	12: StoreAdmin;
+	13: StoreAssistant;
+	14: StoreKitchen/StoreWaitress/StoreCasher
+
+
